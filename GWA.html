@@ -1,0 +1,690 @@
+<html>
+<head><title>General Weighted Average</title></head>
+<script type="text/javascript">
+	
+	function equi() {
+		var grd,r,gint;
+		var grd2,r2,gint2;
+		var grd3,r3,gint3;
+		var grd4,r4,gint4;
+		var grd5,r5,gint5;
+		var grd6,r6,gint6;
+		var grd7,r7,gint7;
+		var grd8,r8,gint8;
+		var grd9,r9,gint9;
+		
+		
+		grd = document.myForm.gr1.value;
+		r = document.myForm.rem.value;
+		gint = parseInt(grd);
+
+		grd2 = document.myForm.gr2.value;
+		r2 = document.myForm.rem2.value;
+		gint2 = parseInt(grd2);
+
+		grd3 = document.myForm.gr3.value;
+		r3 = document.myForm.rem3.value;
+		gint3 = parseInt(grd3);
+
+		grd4 = document.myForm.gr4.value;
+		r4 = document.myForm.rem4.value;
+		gint4 = parseInt(grd4);
+		
+		grd5 = document.myForm.gr5.value;
+		r5 = document.myForm.rem5.value;
+		gint5 = parseInt(grd5);
+
+		grd6 = document.myForm.gr6.value;
+		r6 = document.myForm.rem6.value;
+		gint6 = parseInt(grd6);
+
+		grd7 = document.myForm.gr7.value;
+		r7 = document.myForm.rem7.value;
+		gint7 = parseInt(grd7);
+
+		grd8 = document.myForm.gr8.value;
+		r8 = document.myForm.rem8.value;
+		gint8 = parseInt(grd8);
+
+		grd9 = document.myForm.gr9.value;
+		r9 = document.myForm.rem9.value;
+		gint9 = parseInt(grd9);
+
+	
+		if (gint>=95)
+		{
+			document.myForm.ans.value = 1.00;
+			document.myForm.rem.value ="PASSED";
+			
+		}
+		else if(gint>=93)
+		{
+			document.myForm.ans.value = 1.25;
+			document.myForm.rem.value ="PASSED";
+		}
+		else if(gint>=90)
+		{
+			document.myForm.ans.value = 1.50;
+			document.myForm.rem.value ="PASSED";
+		}
+		else if(gint>=87)
+		{
+			document.myForm.ans.value = 1.75;
+			document.myForm.rem.value ="PASSED";
+		}
+		else if(gint>=85)
+		{
+			document.myForm.ans.value = 2.00;
+			document.myForm.rem.value ="PASSED";
+		}
+		else if(gint>=83)
+		{
+			document.myForm.ans.value = 2.25;
+			document.myForm.rem.value ="PASSED";
+		}
+		else if(gint>=80)
+		{
+			document.myForm.ans.value = 2.50;
+			document.myForm.rem.value ="PASSED";
+		}
+		else if(gint>=77)
+		{
+			document.myForm.ans.value = 2.75;
+			document.myForm.rem.value ="PASSED";
+		}
+		else if(gint>=75)
+		{
+			document.myForm.ans.value = 3.00;
+			document.myForm.rem.value ="PASSED";
+		}
+		else if(gint<=74)
+		{
+			document.myForm.ans.value = "inc";
+			document.myForm.rem.value ="Failed";
+		}
+
+
+	if (gint2>=95)
+		{
+			document.myForm.ans2.value = 1.00;
+			document.myForm.rem2.value ="PASSED";
+			
+		}
+		else if(gint2>=93)
+		{
+			document.myForm.ans2.value = 1.25;
+			document.myForm.rem2.value ="PASSED";
+		}
+		else if(gint2>=90)
+		{
+			document.myForm.ans2.value = 1.50;
+			document.myForm.rem2.value ="PASSED";
+		}
+		else if(gint2>=87)
+		{
+			document.myForm.ans2.value = 1.75;
+			document.myForm.rem2.value ="PASSED";
+		}
+		else if(gint2>=85)
+		{
+			document.myForm.ans2.value = 2.00;
+			document.myForm.rem2.value ="PASSED";
+		}
+		else if(gint2>=83)
+		{
+			document.myForm.ans2.value = 2.25;
+			document.myForm.rem2.value ="PASSED";
+		}
+		else if(gint2>=80)
+		{
+			document.myForm.ans2.value = 2.50;
+			document.myForm.rem2.value ="PASSED";
+		}
+		else if(gint2>=77)
+		{
+			document.myForm.ans2.value = 2.75;
+			document.myForm.rem2.value ="PASSED";
+		}
+		else if(gint2>=75)
+		{
+			document.myForm.ans2.value = 3.00;
+			document.myForm.rem2.value ="PASSED";
+		}
+		else if(gint2<=74)
+		{
+			document.myForm.ans2.value = "inc";
+			document.myForm.rem2.value ="Failed";
+		}
+
+		if (gint3>=95)
+		{
+			document.myForm.ans3.value = 1.00;
+			document.myForm.rem3.value ="PASSED";
+			
+		}
+		else if(gint3>=93)
+		{
+			document.myForm.ans3.value = 1.25;
+			document.myForm.rem3.value ="PASSED";
+		}
+		else if(gint3>=90)
+		{
+			document.myForm.ans3.value = 1.50;
+			document.myForm.rem3.value ="PASSED";
+		}
+		else if(gint3>=87)
+		{
+			document.myForm.ans3.value = 1.75;
+			document.myForm.rem3.value ="PASSED";
+		}
+		else if(gint3>=85)
+		{
+			document.myForm.ans3.value = 2.00;
+			document.myForm.rem3.value ="PASSED";
+		}
+		else if(gint3>=83)
+		{
+			document.myForm.ans3.value = 2.25;
+			document.myForm.rem3.value ="PASSED";
+		}
+		else if(gint3>=80)
+		{
+			document.myForm.ans3.value = 2.50;
+			document.myForm.rem3.value ="PASSED";
+		}
+		else if(gint3>=77)
+		{
+			document.myForm.ans3.value = 2.75;
+			document.myForm.rem3.value ="PASSED";
+		}
+		else if(gint3>=75)
+		{
+			document.myForm.ans3.value = 3.00;
+			document.myForm.rem3.value ="PASSED";
+		}
+		else if(gint3<=74)
+		{
+			document.myForm.ans3.value = "inc";
+			document.myForm.rem3.value ="Failed";
+		}
+
+		if (gint4>=95)
+		{
+			document.myForm.ans4.value = 1.00;
+			document.myForm.rem4.value ="PASSED";
+			
+		}
+		else if(gint4>=93)
+		{
+			document.myForm.ans4.value = 1.25;
+			document.myForm.rem4.value ="PASSED";
+		}
+		else if(gint4>=90)
+		{
+			document.myForm.ans4.value = 1.50;
+			document.myForm.rem4.value ="PASSED";
+		}
+		else if(gint4>=87)
+		{
+			document.myForm.ans4.value = 1.75;
+			document.myForm.rem4.value ="PASSED";
+		}
+		else if(gint4>=85)
+		{
+			document.myForm.ans4.value = 2.00;
+			document.myForm.rem4.value ="PASSED";
+		}
+		else if(gint4>=83)
+		{
+			document.myForm.ans4.value = 2.25;
+			document.myForm.rem4.value ="PASSED";
+		}
+		else if(gint4>=80)
+		{
+			document.myForm.ans4.value = 2.50;
+			document.myForm.rem4.value ="PASSED";
+		}
+		else if(gint4>=77)
+		{
+			document.myForm.ans4.value = 2.75;
+			document.myForm.rem4.value ="PASSED";
+		}
+		else if(gint4>=75)
+		{
+			document.myForm.ans4.value = 3.00;
+			document.myForm.rem4.value ="PASSED";
+		}
+		else if(gint4<=74)
+		{
+			document.myForm.ans4.value = "inc";
+			document.myForm.rem4.value ="Failed";
+		}
+
+		if (gint5>=95)
+		{
+			document.myForm.ans5.value = 1.00;
+			document.myForm.rem5.value ="PASSED";
+			
+		}
+		else if(gint5>=93)
+		{
+			document.myForm.ans5.value = 1.25;
+			document.myForm.rem5.value ="PASSED";
+		}
+		else if(gint5>=90)
+		{
+			document.myForm.ans5.value = 1.50;
+			document.myForm.rem5.value ="PASSED";
+		}
+		else if(gint5>=87)
+		{
+			document.myForm.ans5.value = 1.75;
+			document.myForm.rem5.value ="PASSED";
+		}
+		else if(gint5>=85)
+		{
+			document.myForm.ans5.value = 2.00;
+			document.myForm.rem5.value ="PASSED";
+		}
+		else if(gint5>=83)
+		{
+			document.myForm.ans5.value = 2.25;
+			document.myForm.rem5.value ="PASSED";
+		}
+		else if(gint5>=80)
+		{
+			document.myForm.ans5.value = 2.50;
+			document.myForm.rem5.value ="PASSED";
+		}
+		else if(gint5>=77)
+		{
+			document.myForm.ans5.value = 2.75;
+			document.myForm.rem5.value ="PASSED";
+		}
+		else if(gint5>=75)
+		{
+			document.myForm.ans5.value = 3.00;
+			document.myForm.rem5.value ="PASSED";
+		}
+		else if(gint5<=74)
+		{
+			document.myForm.ans5.value = "inc";
+			document.myForm.rem5.value ="Failed";
+		}
+
+		if (gint6>=95)
+		{
+			document.myForm.ans6.value = 1.00;
+			document.myForm.rem6.value ="PASSED";
+			
+		}
+		else if(gint6>=93)
+		{
+			document.myForm.ans6.value = 1.25;
+			document.myForm.rem6.value ="PASSED";
+		}
+		else if(gint6>=90)
+		{
+			document.myForm.ans6.value = 1.50;
+			document.myForm.rem6.value ="PASSED";
+		}
+		else if(gint6>=87)
+		{
+			document.myForm.ans6.value = 1.75;
+			document.myForm.rem6.value ="PASSED";
+		}
+		else if(gint6>=85)
+		{
+			document.myForm.ans6.value = 2.00;
+			document.myForm.rem6.value ="PASSED";
+		}
+		else if(gint6>=83)
+		{
+			document.myForm.ans6.value = 2.25;
+			document.myForm.rem6.value ="PASSED";
+		}
+		else if(gint6>=80)
+		{
+			document.myForm.ans6.value = 2.50;
+			document.myForm.rem6.value ="PASSED";
+		}
+		else if(gint6>=77)
+		{
+			document.myForm.ans6.value = 2.75;
+			document.myForm.rem6.value ="PASSED";
+		}
+		else if(gint6>=75)
+		{
+			document.myForm.ans6.value = 3.00;
+			document.myForm.rem6.value ="PASSED";
+		}
+		else if(gint6<=74)
+		{
+			document.myForm.ans6.value = "inc";
+			document.myForm.rem6.value ="Failed";
+		}
+
+		if (gint7>=95)
+		{
+			document.myForm.ans7.value = 1.00;
+			document.myForm.rem7.value ="PASSED";
+			
+		}
+		else if(gint7>=93)
+		{
+			document.myForm.ans7.value = 1.25;
+			document.myForm.rem7.value ="PASSED";
+		}
+		else if(gint7>=90)
+		{
+			document.myForm.ans7.value = 1.50;
+			document.myForm.rem7.value ="PASSED";
+		}
+		else if(gint7>=87)
+		{
+			document.myForm.ans7.value = 1.75;
+			document.myForm.rem7.value ="PASSED";
+		}
+		else if(gint7>=85)
+		{
+			document.myForm.ans7.value = 2.00;
+			document.myForm.rem7.value ="PASSED";
+		}
+		else if(gint7>=83)
+		{
+			document.myForm.ans7.value = 2.25;
+			document.myForm.rem7.value ="PASSED";
+		}
+		else if(gint7>=80)
+		{
+			document.myForm.ans7.value = 2.50;
+			document.myForm.rem7.value ="PASSED";
+		}
+		else if(gint7>=77)
+		{
+			document.myForm.ans7.value = 2.75;
+			document.myForm.rem7.value ="PASSED";
+		}
+		else if(gint7>=75)
+		{
+			document.myForm.ans7.value = 3.00;
+			document.myForm.rem7.value ="PASSED";
+		}
+		else if(gint7<=74)
+		{
+			document.myForm.ans7.value = "inc";
+			document.myForm.rem7.value ="Failed";
+		}
+
+		if (gint8>=95)
+		{
+			document.myForm.ans8.value = 1.00;
+			document.myForm.rem8.value ="PASSED";
+			
+		}
+		else if(gint8>=93)
+		{
+			document.myForm.ans8.value = 1.25;
+			document.myForm.rem8.value ="PASSED";
+		}
+		else if(gint8>=90)
+		{
+			document.myForm.ans8.value = 1.50;
+			document.myForm.rem8.value ="PASSED";
+		}
+		else if(gint8>=87)
+		{
+			document.myForm.ans8.value = 1.75;
+			document.myForm.rem8.value ="PASSED";
+		}
+		else if(gint8>=85)
+		{
+			document.myForm.ans8.value = 2.00;
+			document.myForm.rem8.value ="PASSED";
+		}
+		else if(gint8>=83)
+		{
+			document.myForm.ans8.value = 2.25;
+			document.myForm.rem8.value ="PASSED";
+		}
+		else if(gint8>=80)
+		{
+			document.myForm.ans8.value = 2.50;
+			document.myForm.rem8.value ="PASSED";
+		}
+		else if(gint8>=77)
+		{
+			document.myForm.ans8.value = 2.75;
+			document.myForm.rem8.value ="PASSED";
+		}
+		else if(gint8>=75)
+		{
+			document.myForm.ans8.value = 3.00;
+			document.myForm.rem8.value ="PASSED";
+		}
+		else if(gint8<=74)
+		{
+			document.myForm.ans8.value = "inc";
+			document.myForm.rem8.value ="Failed";
+		}
+
+		if (gint9>=95)
+		{
+			document.myForm.ans9.value = 1.00;
+			document.myForm.rem9.value ="PASSED";
+			
+		}
+		else if(gint9>=93)
+		{
+			document.myForm.ans9.value = 1.25;
+			document.myForm.rem9.value ="PASSED";
+		}
+		else if(gint9>=90)
+		{
+			document.myForm.ans9.value = 1.50;
+			document.myForm.rem9.value ="PASSED";
+		}
+		else if(gint9>=87)
+		{
+			document.myForm.ans9.value = 1.75;
+			document.myForm.rem9.value ="PASSED";
+		}
+		else if(gint9>=85)
+		{
+			document.myForm.ans9.value = 2.00;
+			document.myForm.rem9.value ="PASSED";
+		}
+		else if(gint9>=83)
+		{
+			document.myForm.ans9.value = 2.25;
+			document.myForm.rem9.value ="PASSED";
+		}
+		else if(gint9>=80)
+		{
+			document.myForm.ans9.value = 2.50;
+			document.myForm.rem9.value ="PASSED";
+		}
+		else if(gint9>=77)
+		{
+			document.myForm.ans9.value = 2.75;
+			document.myForm.rem9.value ="PASSED";
+		}
+		else if(gint9>=75)
+		{
+			document.myForm.ans9.value = 3.00;
+			document.myForm.rem9.value ="PASSED";
+		}
+		else if(gint9<=74)
+		{
+			document.myForm.ans9.value = "inc";
+			document.myForm.rem9.value ="Failed";
+		}
+
+}
+	 function ave(){
+	 	var grd,a1,gint,aint;
+		var grd2,a2,gint2,aint2;
+		var grd3,a3,gint3,aint3;
+		var grd4,a4,gint4,aint4;
+		var grd5,a5,gint5,aint5;
+		var grd6,a6,gint6,aint6;
+		var grd7,a7,gint7,aint7;
+		var grd8,a8,gint8,aint8;
+		var grd9,a9,gint9,aint9;
+		var av,gw
+		
+
+		grd = document.myForm.gr1.value;
+		a1 = document.myForm.ans.value;
+		gint = parseInt(grd);
+		aint = parseInt(a1);
+
+		grd2 = document.myForm.gr2.value;
+		a2 = document.myForm.ans2.value;
+		gint2 = parseInt(grd2);
+		aint2 = parseInt(a2);
+
+		grd3 = document.myForm.gr3.value;
+		a3 = document.myForm.ans3.value;
+		gint3 = parseInt(grd3);
+		aint3 = parseInt(a3);
+
+		grd4 = document.myForm.gr4.value;
+		a4 = document.myForm.ans4.value;
+		gint4 = parseInt(grd4);
+		aint4 = parseInt(a4);
+
+		grd5 = document.myForm.gr5.value;
+		a5 = document.myForm.ans5.value;
+		gint5 = parseInt(grd5);
+		aint5 = parseInt(a5);
+
+		grd6 = document.myForm.gr6.value;
+		a6 = document.myForm.ans6.value;
+		gint6 = parseInt(grd6);
+		aint6 = parseInt(a6);
+
+		grd7 = document.myForm.gr7.value;
+		a7 = document.myForm.ans7.value;
+		gint7 = parseInt(grd7);
+		aint7 = parseInt(a7);
+
+		grd8 = document.myForm.gr8.value;
+		a8 = document.myForm.ans8.value;
+		gint8 = parseInt(grd8);
+		aint8 = parseInt(a8);
+
+		grd9 = document.myForm.gr9.value;
+		a9 = document.myForm.ans9.value;
+		gint9 = parseInt(grd9);
+		aint9 = parseInt(a9);
+
+		av = (gint+gint2+gint3+gint4+gint5+gint6+gint7+gint8+gint9)/9;
+		gw = (aint+aint2+aint3+aint4+aint5+aint6+aint7+aint8+aint9)/9;
+
+		document.myForm.avergrd.value = av ; 
+		document.myForm.avergwa.value = gw ; 
+
+	
+	 }
+	
+	 
+
+</script>
+
+	<h1>Input Grades</h1>
+<body>
+	<form name="myForm">
+		<table border="2px">
+			<tr>
+				<th>NAME:</th>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<th>COURSE & YR.:</th>
+				<td><input type="text" name="crs"></td>
+				<td><input type="text" name="maj"></td>
+			</tr>
+			<tr>
+				<th>Subjects Code</th>
+				<th><center>Grades</center></th>
+				<th><center>GWA</center></th>
+				<th><center>Remarks</center></th>
+			</tr>
+			<tr>
+				<td>MITE3</td>
+				<td><input type="text" name="gr1"></td>
+				<td><input type="text" name="ans" readonly=""></td>
+				<td><input type="text" name="rem" readonly=""></td>
+			</tr>	
+			<tr>
+				<td>MITE4</td>	
+				<td><input type="text" name="gr2"></td>
+				<td><input type="text" name="ans2" readonly=""></td>
+				<td><input type="text" name="rem2" readonly=""></td>
+			</tr>
+			<tr>
+				<tr>
+				<td>MITE5</td>	
+				<td><input type="text" name="gr3"></td>
+				<td><input type="text" name="ans3" readonly=""></td>
+				<td><input type="text" name="rem3" readonly=""></td>
+			</tr>	
+			</tr>
+			<tr>
+				<td>MITE12</td>	
+				<td><input type="text" name="gr4"></td>
+				<td><input type="text" name="ans4" readonly=""></td>
+				<td><input type="text" name="rem4" readonly=""></td>
+			</tr>
+			<tr>
+				<td>GEC08</td>	
+				<td><input type="text" name="gr5"></td>
+				<td><input type="text" name="ans5" readonly=""></td>
+				<td><input type="text" name="rem5" readonly=""></td>
+			</tr>
+			<tr>
+				<td>MITE13</td>	
+				<td><input type="text" name="gr6"></td>
+				<td><input type="text" name="ans6" readonly=""></td>
+				<td><input type="text" name="rem6" readonly=""></td>
+			</tr>
+			<tr>
+				<td>PE4</td>	
+				<td><input type="text" name="gr7"></td>
+				<td><input type="text" name="ans7" readonly=""></td>
+				<td><input type="text" name="rem7" readonly=""></td>
+			</tr>
+			<tr>
+				<td>EHANCE2</td>	
+				<td><input type="text" name="gr8"></td>
+				<td><input type="text" name="ans8" readonly=""></td>
+				<td><input type="text" name="rem8" readonly=""></td>
+			</tr>
+			<tr>
+				<td>ENHANCE4</td>	
+				<td><input type="text" name="gr9"></td>
+				<td><input type="text" name="ans9" readonly=""></td>
+				<td><input type="text" name="rem9" readonly=""></td>
+			</tr>
+			<tr>
+				<td><br></td>	
+			</tr>	
+			<tr>
+				<td>AVERAGE =</td>	
+				<td><input type="text" style="background-color:tomato" name="avergrd" readonly=""></td>
+				<td><input type="text" style="background-color:powderblue" name="avergwa" readonly=""></td>
+				<td><input type="text" name="rem11" readonly=""></td>
+			</tr>	
+		</table>
+<br>
+&nbsp;&nbsp;
+<input type="button" name="bt1" value="Equivalent" onclick="equi()">
+&nbsp;&nbsp;
+<input type="button" name="bt4" value="Average" onclick="ave()">
+&nbsp;&nbsp;
+<input type="button" name="bt5" value="^" onclick="power()">
+	
+</form>
+</body>
+</html>
